@@ -145,6 +145,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-course-carsales"
+    }
+  },
+  "defaultProject": "angular-course-carsales",
+  "cli": {
+    "analytics": false
+  }
 }
