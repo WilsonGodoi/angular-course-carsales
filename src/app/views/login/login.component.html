@@ -8,14 +8,25 @@
         </div>
         <div class="p-col-12">
           <label for="">Usuário:</label>
-          <input class="p-col-12" type="text" pInputText />
+          <input
+            [(ngModel)]="requestLogin.login"
+            class="p-col-12"
+            type="text"
+            pInputText
+          />
         </div>
         <div class="p-col-12">
           <label for="">Senha:</label>
-          <input class="p-col-12" type="text" pInputText />
+          <input
+            [(ngModel)]="requestLogin.password"
+            class="p-col-12"
+            type="password"
+            pInputText
+          />
         </div>
         <div class="p-col-12">
           <button
+            (click)="doLogin()"
             pButton
             type="button"
             label="Entrar"
